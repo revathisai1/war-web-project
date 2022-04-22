@@ -14,7 +14,7 @@ pipeline {
         }
         stage('continous deploy') {
             steps {
-               sh 'sshpass -p "narayana" scp target/wwp-1.0.0.war. narayana@172.17.0.3 /opt/apache-tomcat-9.0.62/webapps' 
+               sh 'sshpass -p "narayana" scp target/wwp-1.0.0.war. narayana@172.17.0.3: /opt/apache-tomcat-9.0.62/webapps' 
             }
         }
     }
